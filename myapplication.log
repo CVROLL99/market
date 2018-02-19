@@ -1,0 +1,132 @@
+2018-02-19 15:52:31.778  INFO 4048 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 4048 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-19 15:52:31.782  INFO 4048 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-19 15:52:31.846  INFO 4048 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Mon Feb 19 15:52:31 MSK 2018]; root of context hierarchy
+2018-02-19 15:52:33.327  INFO 4048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be21f34a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-19 15:52:33.774  INFO 4048 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-02-19 15:52:33.790  INFO 4048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-19 15:52:33.790  INFO 4048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-19 15:52:33.899  INFO 4048 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-19 15:52:33.899  INFO 4048 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2057 ms
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-19 15:52:34.227  INFO 4048 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-19 15:52:34.274  WARN 4048 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-02-19 15:52:34.274  INFO 4048 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-02-19 15:52:34.306  INFO 4048 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-19 15:52:34.321 ERROR 4048 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-02-19 15:55:09.980  INFO 11208 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 11208 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-19 15:55:09.980  INFO 11208 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-19 15:55:10.043  INFO 11208 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:55:10 MSK 2018]; root of context hierarchy
+2018-02-19 15:55:11.324  INFO 11208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-02-19 15:55:11.324  INFO 11208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-19 15:55:11.324  INFO 11208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-19 15:55:11.402  INFO 11208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-19 15:55:11.402  INFO 11208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1359 ms
+2018-02-19 15:55:11.511  INFO 11208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-19 15:55:11.511  INFO 11208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-19 15:55:11.511  INFO 11208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-19 15:55:11.511  INFO 11208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-19 15:55:11.511  INFO 11208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-19 15:55:11.811  INFO 11208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:55:10 MSK 2018]; root of context hierarchy
+2018-02-19 15:55:11.873  INFO 11208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-19 15:55:11.873  INFO 11208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-19 15:55:11.889  INFO 11208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:55:11.889  INFO 11208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:55:11.904  INFO 11208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:55:11.936  INFO 11208 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-02-19 15:55:12.076  INFO 11208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-19 15:55:12.139  INFO 11208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-02-19 15:55:12.139  INFO 11208 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 2.456 seconds (JVM running for 3.296)
+2018-02-19 15:58:25.006  INFO 10716 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 10716 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-19 15:58:25.008  INFO 10716 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-19 15:58:25.071  INFO 10716 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:58:25 MSK 2018]; root of context hierarchy
+2018-02-19 15:58:26.548  INFO 10716 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-02-19 15:58:26.563  INFO 10716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-19 15:58:26.563  INFO 10716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-19 15:58:26.658  INFO 10716 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-19 15:58:26.658  INFO 10716 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1587 ms
+2018-02-19 15:58:26.799  INFO 10716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-19 15:58:26.814  INFO 10716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-19 15:58:26.814  INFO 10716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-19 15:58:26.814  INFO 10716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-19 15:58:26.814  INFO 10716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-19 15:58:27.154  INFO 10716 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:58:25 MSK 2018]; root of context hierarchy
+2018-02-19 15:58:27.218  INFO 10716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-19 15:58:27.218  INFO 10716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-19 15:58:27.234  INFO 10716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-19 15:58:27.246  INFO 10716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:58:27.246  INFO 10716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:58:27.282  INFO 10716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:58:27.306  INFO 10716 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-02-19 15:58:27.420  INFO 10716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-19 15:58:27.467  INFO 10716 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-02-19 15:58:27.467  INFO 10716 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 2.763 seconds (JVM running for 3.697)
+2018-02-19 15:59:40.238  INFO 4208 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 4208 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-19 15:59:40.238  INFO 4208 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-19 15:59:40.285  INFO 4208 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:59:40 MSK 2018]; root of context hierarchy
+2018-02-19 15:59:41.627  INFO 4208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-02-19 15:59:41.627  INFO 4208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-19 15:59:41.627  INFO 4208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-19 15:59:41.702  INFO 4208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-19 15:59:41.702  INFO 4208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1417 ms
+2018-02-19 15:59:41.827  INFO 4208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-19 15:59:41.827  INFO 4208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-19 15:59:41.827  INFO 4208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-19 15:59:41.827  INFO 4208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-19 15:59:41.827  INFO 4208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-19 15:59:42.259  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 15:59:40 MSK 2018]; root of context hierarchy
+2018-02-19 15:59:42.306  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-19 15:59:42.321  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-19 15:59:42.321  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-19 15:59:42.337  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:59:42.337  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:59:42.368  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 15:59:42.399  INFO 4208 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-02-19 15:59:42.478  INFO 4208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-19 15:59:42.524  INFO 4208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-02-19 15:59:42.524  INFO 4208 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 2.619 seconds (JVM running for 3.57)
+2018-02-19 20:00:01.386  INFO 12180 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 12180 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-19 20:00:01.386  INFO 12180 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-19 20:00:01.448  INFO 12180 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 20:00:01 MSK 2018]; root of context hierarchy
+2018-02-19 20:00:03.013  INFO 12180 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-02-19 20:00:03.028  INFO 12180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-19 20:00:03.028  INFO 12180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-19 20:00:03.200  INFO 12180 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-19 20:00:03.200  INFO 12180 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1752 ms
+2018-02-19 20:00:03.356  INFO 12180 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-19 20:00:03.356  INFO 12180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-19 20:00:03.356  INFO 12180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-19 20:00:03.356  INFO 12180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-19 20:00:03.356  INFO 12180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-19 20:00:03.608  INFO 12180 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f9a3314: startup date [Mon Feb 19 20:00:01 MSK 2018]; root of context hierarchy
+2018-02-19 20:00:03.655  INFO 12180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-19 20:00:03.655  INFO 12180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-19 20:00:03.671  INFO 12180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-19 20:00:03.686  INFO 12180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 20:00:03.686  INFO 12180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 20:00:03.702  INFO 12180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-19 20:00:03.733  INFO 12180 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-02-19 20:00:03.811  INFO 12180 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-19 20:00:03.858  INFO 12180 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-02-19 20:00:03.858  INFO 12180 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 2.998 seconds (JVM running for 4.269)
+2018-02-19 20:00:09.177  INFO 12180 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-19 20:00:09.178  INFO 12180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-19 20:00:09.195  INFO 12180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
