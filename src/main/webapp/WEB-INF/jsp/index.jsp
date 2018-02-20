@@ -24,13 +24,21 @@
 
     <div id="header">
 
-
-        <h2>Добро пожаловать в интернет-магазин товаров!</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="/resources/logo1.jpg" align="left"/>
+                </td>
+                <td align="right" padding="5px">
+                    <h2>Интернет-магазин товаров</h2>
+                </td>
+            </tr>
+        </table>
 
     </div>
 
     <div id="menu">
-
+        Здесь будет располагаться меню
         <p>Здесь будет располагаться меню.</p>
     </div>
 
