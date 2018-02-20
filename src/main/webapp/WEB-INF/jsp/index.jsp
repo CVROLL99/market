@@ -20,6 +20,26 @@
 
 <body>
 
+<script type="text/javascript">
+
+    //Функция показа
+    function show(state) {
+
+        document.getElementById('window').style.display = state;
+        document.getElementById('wrap').style.display = state;
+    }
+
+</script>
+
+<!-- Задний прозрачный фон-->
+<div onclick="show('none')" id="wrap"></div>
+
+<!-- Само окно-->
+<div id="window">
+    <!-- Картинка крестика-->
+    <img class="close" onclick="show('none')" src="/resources/cross.jpg" align="right">
+</div>
+
 <div id="container">
 
     <div id="header">
@@ -29,7 +49,7 @@
                 <td>
                     <img src="/resources/logo1.jpg" align="left"/>
                 </td>
-                <td align="right" padding="5px">
+                <td align="right">
                     <h2>Интернет-магазин товаров</h2>
                 </td>
             </tr>
@@ -38,40 +58,52 @@
     </div>
 
     <div id="menu">
-        Здесь будет располагаться меню
-        <p>Здесь будет располагаться меню.</p>
-    </div>
 
-</div>
+        <table>
 
-<div id="content">
-
-    <table>
-        <tr>
-            <th>Номер</th>
-            <th>Наименование</th>
-            <th>Описание</th>
-            <th>Цена</th>
-        </tr>
-        <c:forEach items="${products}" var="product">
             <tr>
-                <td>${product.id}</td>
-                <td>${product.name}</td>
-                <td>${product.description}</td>
-                <td>${product.price}</td>
+                <td>В этом блоке разместится меню</td>
+            </tr>
+            <tr>
+                <td>Форма логина и пароля</td>
             </tr>
 
-        </c:forEach>
-    </table>
+
+        </table>
+        <%--Здесь будет располагаться меню--%>
+        <%--<p>Здесь будет располагаться меню.</p>--%>
 
 
-</div>
+    </div>
+
+    <div id="content">
+
+        <table>
+            <tr>
+                <th>Номер</th>
+                <th>Наименование</th>
+                <th>Описание</th>
+                <th>Цена</th>
+            </tr>
+            <c:forEach items="${products}" var="product">
+                <tr>
+                    <td onclick="show('block')">${product.id}</td>
+                    <td onclick="show('block')">${product.name}</td>
+                    <td onclick="show('block')">${product.description}</td>
+                    <td onclick="show('block')">${product.price}</td>
+                </tr>
+
+            </c:forEach>
+        </table>
 
 
-<div id="footer">
+    </div>
 
 
-</div>
+    <div id="footer">
+
+
+    </div>
 
 </div>
 
