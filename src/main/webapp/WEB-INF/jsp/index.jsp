@@ -11,28 +11,61 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Welcome</title>
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath}/css/style.css"/>
+    <style>
+        <%@include file="/WEB-INF/css/style.css"%>
+    </style>
+    <title>Интернет-магазин</title>
+
 </head>
+
 <body>
 
-<h1>Добро пожаловать в интернет-магазин товаров!</h1>
+<div id="container">
 
-<%--<h2>${message23}</h2>--%>
+    <div id="header">
 
 
-<h1>Товары:</h1>
-<table border="1">
-<c:forEach items="${products}" var="product">
-    <tr>
-        <td>${product.id}</td>
-        <td>${product.name}</td>
-        <td>${product.description}</td>
-    </tr>
+        <h2>Добро пожаловать в интернет-магазин товаров!</h2>
 
-</c:forEach>
-</table>
+    </div>
+
+    <div id="menu">
+
+        <p>Здесь будет располагаться меню.</p>
+    </div>
+
+</div>
+
+<div id="content">
+
+    <table>
+        <tr>
+            <th>Номер</th>
+            <th>Наименование</th>
+            <th>Описание</th>
+            <th>Цена</th>
+        </tr>
+        <c:forEach items="${products}" var="product">
+            <tr>
+                <td>${product.id}</td>
+                <td>${product.name}</td>
+                <td>${product.description}</td>
+                <td>${product.price}</td>
+            </tr>
+
+        </c:forEach>
+    </table>
+
+
+</div>
+
+
+<div id="footer">
+
+
+</div>
+
+</div>
 
 </body>
 
