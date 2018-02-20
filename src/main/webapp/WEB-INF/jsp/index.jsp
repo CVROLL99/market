@@ -18,9 +18,21 @@
 <body>
 
 <h1>Добро пожаловать в интернет-магазин товаров!</h1>
-<h2>${message}</h2>
 
-<c:out value="${productList}" />
+<%--<h2>${message23}</h2>--%>
+
+
+<h1>Товары:</h1>
+<table border="1">
+<c:forEach items="${products}" var="product">
+    <tr>
+        <td>${product.id}</td>
+        <td>${product.name}</td>
+        <td>${product.description}</td>
+    </tr>
+
+</c:forEach>
+</table>
 
 </body>
 

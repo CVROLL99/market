@@ -2,10 +2,11 @@ package com.market.market.Entity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "product")
-public class Product {
+public class Product implements Serializable{
 
 
     @Id

@@ -1,40 +1,31 @@
 package com.market.market.Controller;
 
 
-import com.market.market.Entity.Product;
-import com.market.market.Model.ProductModel;
+import com.market.market.Service.ProductService;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.ManagedBean;
-import javax.annotation.PostConstruct;
-import java.util.List;
+import java.util.Collections;
 
 @Controller
 @ManagedBean
 @Getter
 @Setter
+@RequestMapping("/")
 public class ProductController {
 
-    private List<Product> productList;
-
     @Autowired
-    private ProductModel productModel;
+    private ProductService productService;
 
-
-    @PostConstruct
-    public void init() {
-        productList = productModel.getAll();
-        System.out.println(productList);
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public ModelAndView index() {
+        return new ModelAndView("/index", Collections.singletonMap("products", productService.findAll()));
     }
 
-    @Override
-    public String toString() {
-        return "ProductController{" +
-                "productList=" + productList +
-                ", productModel=" + productModel +
-                '}';
-    }
 }
