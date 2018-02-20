@@ -13,7 +13,7 @@ public class MainController {
 
         String message = "Hello Spring Boot + JSP";
 
-        model.addAttribute("message", message);
+        model.addAttribute("messag1234e", message);
 
         return "index";
     }
