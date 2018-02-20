@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: misha
@@ -19,8 +20,7 @@
 <h1>Добро пожаловать в интернет-магазин товаров!</h1>
 <h2>${message}</h2>
 
-               <%--${ProductController.productList}--%>
-
+<c:out value="${productList}" />
 
 </body>
 

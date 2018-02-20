@@ -23,9 +23,11 @@ public class ProductController {
     @Autowired
     private ProductModel productModel;
 
+
     @PostConstruct
     public void init() {
         productList = productModel.getAll();
+        System.out.println(productList);
     }
 
     @Override
