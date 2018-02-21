@@ -27,6 +27,7 @@
 
         document.getElementById('window').style.display = state;
         document.getElementById('wrap').style.display = state;
+
     }
 
 </script>
@@ -38,6 +39,7 @@
 <div id="window">
     <!-- Картинка крестика-->
     <img class="close" onclick="show('none')" src="/resources/cross.jpg" align="right">
+    <p>dfg</p>
 </div>
 
 <div id="container">
@@ -62,7 +64,7 @@
         <table>
 
             <tr>
-                <td>В этом блоке разместится меню</td>
+                <td><a href="${pageContext.request.contextPath}/admin">В админку</a>  </td>
             </tr>
             <tr>
                 <td>Форма логина и пароля</td>
@@ -70,9 +72,6 @@
 
 
         </table>
-        <%--Здесь будет располагаться меню--%>
-        <%--<p>Здесь будет располагаться меню.</p>--%>
-
 
     </div>
 
@@ -86,11 +85,11 @@
                 <th>Цена</th>
             </tr>
             <c:forEach items="${products}" var="product">
-                <tr>
-                    <td onclick="show('block')">${product.id}</td>
-                    <td onclick="show('block')">${product.name}</td>
-                    <td onclick="show('block')">${product.description}</td>
-                    <td onclick="show('block')">${product.price}</td>
+                <tr onclick="show('block')" id="${product.id}">
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.description}</td>
+                    <td>${product.price}</td>
                 </tr>
 
             </c:forEach>
