@@ -19,8 +19,20 @@
 </head>
 
 <body>
+<script src="https://yandex.st/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){ //Стартует по загрузке
+        $('#tblExport td').click(function(){// Запускаем по клику на ячейке.
+            //Узнаем индекс строки + индекс ячейки таблицы
+            var rows = $(this).parent('tr').index();
+            document.getElementById('numberObject').innerHTML = rows;
 
+        });
+    });
+</script>
 <script type="text/javascript">
+
+
 
     //Функция показа
     function show(state) {
@@ -39,7 +51,7 @@
 <div id="window">
     <!-- Картинка крестика-->
     <img class="close" onclick="show('none')" src="/resources/cross.jpg" align="right">
-    <p>dfg</p>
+    Инвентарный номер товара: <p id = "numberObject">Подробности о товаре </p><br>
 </div>
 
 <div id="container">
@@ -64,7 +76,7 @@
         <table>
 
             <tr>
-                <td><a href="${pageContext.request.contextPath}/admin">В админку</a>  </td>
+                <td><a href="${pageContext.request.contextPath}/admin">В админку</a></td>
             </tr>
             <tr>
                 <td>Форма логина и пароля</td>
@@ -77,7 +89,7 @@
 
     <div id="content">
 
-        <table>
+        <table id="tblExport">
             <tr>
                 <th>Номер</th>
                 <th>Наименование</th>

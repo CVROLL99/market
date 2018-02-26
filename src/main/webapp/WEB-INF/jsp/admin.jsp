@@ -18,8 +18,70 @@
 
 </head>
 <body>
+<div id="container">
 
-lol
+    <div id="header">
+
+        <table>
+            <tr>
+                <td>
+                    <a href="${pageContext.request.contextPath}/index"><img src="/resources/logo1.jpg" align="left"/></a>
+                </td>
+                <td align="right">
+                    <h2>Интернет-магазин товаров</h2>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="menu">
+
+        <table>
+
+            <tr>
+                <td>Вы вошли как администратор</td>
+            </tr>
+            <tr>
+                <td>Вам доступны редактирование, создание и удаление</td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+    <div id="content">
+
+        <table>
+            <tr>
+                <th>Номер</th>
+                <th>Наименование</th>
+                <th>Описание</th>
+                <th>Цена</th>
+            </tr>
+            <c:forEach items="${products}" var="product">
+                <tr onclick="show('block')" id="${product.id}">
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.description}</td>
+                    <td>${product.price}</td>
+                </tr>
+
+            </c:forEach>
+        </table>
+
+
+    </div>
+
+
+    <div id="footer">
+
+
+    </div>
+
+</div>
 
 </body>
+
 </html>
