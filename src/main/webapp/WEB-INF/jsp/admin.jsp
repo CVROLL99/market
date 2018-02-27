@@ -43,7 +43,7 @@
                 <td>Вы вошли как администратор</td>
             </tr>
             <tr>
-                <td>Вам доступны редактирование, создание и удаление</td>
+                <td><a href="/addNew">Добавить товар</a></td>
             </tr>
 
 
@@ -66,6 +66,8 @@
                     <td>${product.name}</td>
                     <td>${product.description}</td>
                     <td>${product.price}</td>
+                    <td><a href="deleteprod/${product.id}">Delete</a></td>
+                    <td><a href="editform/${product.id}">Edit</a></td>
                 </tr>
 
             </c:forEach>

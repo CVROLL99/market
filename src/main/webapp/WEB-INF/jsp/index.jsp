@@ -21,8 +21,8 @@
 <body>
 <script src="https://yandex.st/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
 <script>
-    $(document).ready(function(){ //Стартует по загрузке
-        $('#tblExport td').click(function(){// Запускаем по клику на ячейке.
+    $(document).ready(function () { //Стартует по загрузке
+        $('#tblExport td').click(function () {// Запускаем по клику на ячейке.
             //Узнаем индекс строки + индекс ячейки таблицы
             var rows = $(this).parent('tr').index();
             document.getElementById('numberObject').innerHTML = rows;
@@ -31,7 +31,6 @@
     });
 </script>
 <script type="text/javascript">
-
 
 
     //Функция показа
@@ -51,7 +50,7 @@
 <div id="window">
     <!-- Картинка крестика-->
     <img class="close" onclick="show('none')" src="/resources/cross.jpg" align="right">
-    Инвентарный номер товара: <p id = "numberObject">Подробности о товаре </p><br>
+    <p id="numberObject"></p>
 </div>
 
 <div id="container">
