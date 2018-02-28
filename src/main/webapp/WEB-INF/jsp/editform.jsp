@@ -47,7 +47,7 @@
                 <td>Меню редактирования товара</td>
             </tr>
             <tr>
-                <td>Отредактируйте Ваш товар</td>
+                <td><a href="${pageContext.request.contextPath}/admin">Назад</a></td>
             </tr>
 
 
@@ -61,25 +61,26 @@
         <form:form method="post" action="editsave">
             <table>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="3">
                         <b>Редактирование товара "${command.name}"</b>
                     </td>
                 </tr>
                 <tr>
                     <td><b>Название:</b></td>
-                    <td><form:input path="name"/></td>
+                    <td ><form:input path="name" id="editfield"/></td>
+                    <td rowspan="3" width="250"></td>
                 </tr>
                 <tr>
                     <td><b>Описание:</b></td>
-                    <td><form:textarea path="description"/></td>
+                    <td ><form:textarea path="description" id="editfield"/></td>
                 </tr>
                 <tr>
                     <td><b>Цена:</b></td>
-                    <td><form:input path="price"/></td>
+                    <td ><form:input path="price" id="editfield"/></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td><input type="submit" value="Сохранить"/></td>
+
+                    <td colspan="3"><input type="submit" value="Сохранить"/></td>
                 </tr>
             </table>
         </form:form>

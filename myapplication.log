@@ -18744,3 +18744,574 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'salary
 2018-02-28 14:07:12.488  WARN 8664 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "editsave"
 2018-02-28 14:15:45.501  WARN 8664 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "editsave"
 2018-02-28 14:20:35.125  WARN 8664 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "editsave"
+2018-02-28 14:40:18.168  INFO 9040 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 9040 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:40:18.171  INFO 9040 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:40:18.261  INFO 9040 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:40:18 MSK 2018]; root of context hierarchy
+2018-02-28 14:40:19.907  INFO 9040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:40:20.419  INFO 9040 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:40:20.435  INFO 9040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:40:20.435  INFO 9040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:40:20.843  INFO 9040 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:40:20.849  INFO 9040 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:40:20.850  INFO 9040 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2592 ms
+2018-02-28 14:40:21.063  INFO 9040 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:40:21.068  INFO 9040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:40:21.070  INFO 9040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:40:21.070  INFO 9040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:40:21.070  INFO 9040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:40:21.825  INFO 9040 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:40:21.842  INFO 9040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:40:21.929  INFO 9040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:40:21.931  INFO 9040 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:40:21.932  INFO 9040 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:40:21.987  INFO 9040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:40:22.169  INFO 9040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:40:22.857  INFO 9040 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:40:23.035  INFO 9040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:40:23.741  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:40:18 MSK 2018]; root of context hierarchy
+2018-02-28 14:40:23.864  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:40:23.866  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:40:23.867  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:40:23.868  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:40:23.869  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:40:23.869  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:40:23.872  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:40:23.874  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:40:23.878  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:40:23.878  INFO 9040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:40:24.087  INFO 9040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:40:24.106  INFO 9040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:40:24.106  INFO 9040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:40:24.172  INFO 9040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:40:24.721  INFO 9040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:40:24.892  INFO 9040 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:40:24.900  INFO 9040 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.341 seconds (JVM running for 10.5)
+2018-02-28 14:40:31.323  INFO 9040 --- [http-nio-8083-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:40:31.326  INFO 9040 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:40:31.370  INFO 9040 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-02-28 14:40:31.468  INFO 9040 --- [http-nio-8083-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-28 14:42:19.202  INFO 9420 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 9420 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:42:19.202  INFO 9420 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:42:19.327  INFO 9420 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:42:19 MSK 2018]; root of context hierarchy
+2018-02-28 14:42:20.722  INFO 9420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:42:21.223  INFO 9420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:42:21.239  INFO 9420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:42:21.241  INFO 9420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:42:21.661  INFO 9420 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:42:21.669  INFO 9420 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:42:21.670  INFO 9420 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2343 ms
+2018-02-28 14:42:21.884  INFO 9420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:42:21.889  INFO 9420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:42:21.890  INFO 9420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:42:21.892  INFO 9420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:42:21.901  INFO 9420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:42:22.714  INFO 9420 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:42:22.736  INFO 9420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:42:22.821  INFO 9420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:42:22.824  INFO 9420 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:42:22.827  INFO 9420 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:42:22.880  INFO 9420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:42:23.048  INFO 9420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:42:23.760  INFO 9420 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:42:23.931  INFO 9420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:42:24.550  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:42:19 MSK 2018]; root of context hierarchy
+2018-02-28 14:42:24.634  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:42:24.636  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:42:24.640  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:42:24.641  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:42:24.641  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:42:24.641  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:42:24.644  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:42:24.646  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:42:24.648  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:42:24.649  INFO 9420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:42:24.675  INFO 9420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:42:24.692  INFO 9420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:42:24.693  INFO 9420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:42:24.773  INFO 9420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:42:25.175  INFO 9420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:42:25.292  INFO 9420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:42:25.298  INFO 9420 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 6.596 seconds (JVM running for 9.923)
+2018-02-28 14:42:29.484  INFO 9420 --- [http-nio-8083-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:42:29.486  INFO 9420 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:42:29.519  INFO 9420 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-02-28 14:42:29.596  INFO 9420 --- [http-nio-8083-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-28 14:44:00.289  INFO 10588 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 10588 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:44:00.289  INFO 10588 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:44:00.367  INFO 10588 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:44:00 MSK 2018]; root of context hierarchy
+2018-02-28 14:44:01.640  INFO 10588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b67e334b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:44:02.153  INFO 10588 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:44:02.168  INFO 10588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:44:02.168  INFO 10588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:44:02.590  INFO 10588 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:44:02.590  INFO 10588 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:44:02.590  INFO 10588 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2238 ms
+2018-02-28 14:44:02.836  INFO 10588 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:44:02.836  INFO 10588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:44:02.836  INFO 10588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:44:02.836  INFO 10588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:44:02.836  INFO 10588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:44:03.627  INFO 10588 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:44:03.644  INFO 10588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:44:03.723  INFO 10588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:44:03.726  INFO 10588 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:44:03.727  INFO 10588 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:44:03.777  INFO 10588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:44:03.896  INFO 10588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:44:04.492  INFO 10588 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:44:04.606  INFO 10588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:44:05.732  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:44:00 MSK 2018]; root of context hierarchy
+2018-02-28 14:44:05.824  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:44:05.826  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:44:05.826  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:44:05.827  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:44:05.828  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:44:05.828  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:44:05.830  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:44:05.831  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:44:05.834  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:44:05.835  INFO 10588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:44:05.858  INFO 10588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:44:05.919  INFO 10588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:44:05.919  INFO 10588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:44:05.975  INFO 10588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:44:06.388  INFO 10588 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:44:06.472  INFO 10588 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:44:06.479  INFO 10588 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 6.565 seconds (JVM running for 9.736)
+2018-02-28 14:44:14.694  INFO 10588 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:44:14.694  INFO 10588 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:44:14.727  INFO 10588 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-02-28 14:46:25.949  INFO 6360 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 6360 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:46:25.953  INFO 6360 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:46:26.027  INFO 6360 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:46:26 MSK 2018]; root of context hierarchy
+2018-02-28 14:46:27.435  INFO 6360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:46:27.944  INFO 6360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:46:27.961  INFO 6360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:46:27.962  INFO 6360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:46:28.401  INFO 6360 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:46:28.407  INFO 6360 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:46:28.407  INFO 6360 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2380 ms
+2018-02-28 14:46:28.706  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:46:28.711  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:46:28.712  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:46:28.712  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:46:28.712  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:46:29.687  INFO 6360 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:46:29.704  INFO 6360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:46:29.788  INFO 6360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:46:29.790  INFO 6360 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:46:29.791  INFO 6360 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:46:29.843  INFO 6360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:46:29.967  INFO 6360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:46:30.632  INFO 6360 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:46:30.784  INFO 6360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:46:31.602  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:46:26 MSK 2018]; root of context hierarchy
+2018-02-28 14:46:31.739  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:46:31.742  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:46:31.743  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:46:31.744  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:46:31.745  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:46:31.948  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:46:31.951  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:46:31.952  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:46:31.955  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:46:31.955  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:46:31.975  INFO 6360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:46:31.992  INFO 6360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:46:31.993  INFO 6360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:46:32.051  INFO 6360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:46:32.420  INFO 6360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:46:32.570  INFO 6360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:46:32.575  INFO 6360 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.127 seconds (JVM running for 10.695)
+2018-02-28 14:46:36.761  INFO 6360 --- [http-nio-8083-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:46:36.762  INFO 6360 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:46:36.799  INFO 6360 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-02-28 14:46:41.546  WARN 6360 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "editsave"
+2018-02-28 14:46:51.671  INFO 6360 --- [http-nio-8083-exec-6] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-28 14:48:22.437  INFO 13776 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 13776 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:48:22.441  INFO 13776 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:48:22.582  INFO 13776 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:48:22 MSK 2018]; root of context hierarchy
+2018-02-28 14:48:24.411  INFO 13776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4831394c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:48:25.078  INFO 13776 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:48:25.107  INFO 13776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:48:25.110  INFO 13776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:48:25.672  INFO 13776 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:48:25.680  INFO 13776 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:48:25.681  INFO 13776 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3103 ms
+2018-02-28 14:48:25.952  INFO 13776 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:48:25.959  INFO 13776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:48:25.961  INFO 13776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:48:25.961  INFO 13776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:48:26.023  INFO 13776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:48:26.926  INFO 13776 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:48:26.951  INFO 13776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:48:27.049  INFO 13776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:48:27.052  INFO 13776 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:48:27.062  INFO 13776 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:48:27.155  INFO 13776 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:48:27.356  INFO 13776 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:48:28.329  INFO 13776 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:48:28.432  INFO 13776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:48:29.244  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:48:22 MSK 2018]; root of context hierarchy
+2018-02-28 14:48:29.340  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:48:29.342  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:48:29.342  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:48:29.343  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:48:29.343  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:48:29.422  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:48:29.425  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:48:29.435  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:48:29.439  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:48:29.440  INFO 13776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:48:29.461  INFO 13776 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:48:29.478  INFO 13776 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:48:29.478  INFO 13776 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:48:29.551  INFO 13776 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:48:29.958  INFO 13776 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:48:30.060  INFO 13776 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:48:30.068  INFO 13776 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 8.179 seconds (JVM running for 13.451)
+2018-02-28 14:48:30.194  INFO 13776 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:48:30.197  INFO 13776 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:48:30.225  INFO 13776 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-02-28 14:49:53.918  INFO 13640 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 13640 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:49:53.918  INFO 13640 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:49:53.997  INFO 13640 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:49:53 MSK 2018]; root of context hierarchy
+2018-02-28 14:49:55.558  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:49:56.177  INFO 13640 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:49:56.195  INFO 13640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:49:56.195  INFO 13640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:49:56.586  INFO 13640 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:49:56.586  INFO 13640 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:49:56.586  INFO 13640 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2589 ms
+2018-02-28 14:49:56.821  INFO 13640 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:49:56.821  INFO 13640 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:49:56.821  INFO 13640 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:49:56.821  INFO 13640 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:49:56.821  INFO 13640 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:49:57.619  INFO 13640 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:49:57.651  INFO 13640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:49:57.729  INFO 13640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:49:57.744  INFO 13640 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:49:57.744  INFO 13640 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:49:57.791  INFO 13640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:49:57.916  INFO 13640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:49:58.707  INFO 13640 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:49:58.841  INFO 13640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:49:59.544  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:49:53 MSK 2018]; root of context hierarchy
+2018-02-28 14:49:59.628  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:49:59.644  INFO 13640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:49:59.659  INFO 13640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:49:59.691  INFO 13640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:49:59.691  INFO 13640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:49:59.753  INFO 13640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:50:00.210  INFO 13640 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:50:00.340  INFO 13640 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:50:00.346  INFO 13640 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 6.985 seconds (JVM running for 11.027)
+2018-02-28 14:50:00.514  INFO 13640 --- [http-nio-8083-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:50:00.514  INFO 13640 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:50:00.544  INFO 13640 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-02-28 14:50:31.640  INFO 4144 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 4144 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:50:31.640  INFO 4144 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:50:31.725  INFO 4144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:50:31 MSK 2018]; root of context hierarchy
+2018-02-28 14:50:33.108  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:50:33.639  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:50:33.656  INFO 4144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:50:33.658  INFO 4144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:50:34.099  INFO 4144 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:50:34.105  INFO 4144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:50:34.106  INFO 4144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2385 ms
+2018-02-28 14:50:34.328  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:50:34.332  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:50:34.334  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:50:34.334  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:50:34.334  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:50:35.158  INFO 4144 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:50:35.175  INFO 4144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:50:35.275  INFO 4144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:50:35.277  INFO 4144 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:50:35.278  INFO 4144 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:50:35.329  INFO 4144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:50:35.466  INFO 4144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:50:36.150  INFO 4144 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:50:36.298  INFO 4144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:50:37.107  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:50:31 MSK 2018]; root of context hierarchy
+2018-02-28 14:50:37.247  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:50:37.249  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:50:37.249  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:50:37.250  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:50:37.250  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:50:37.596  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:50:37.598  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:50:37.600  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:50:37.602  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:50:37.603  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:50:37.623  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:50:37.640  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:50:37.640  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:50:37.704  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:50:38.142  INFO 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:50:38.254  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:50:38.259  INFO 4144 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.074 seconds (JVM running for 10.467)
+2018-02-28 14:50:44.854  INFO 4144 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:50:44.855  INFO 4144 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:50:44.889  INFO 4144 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-02-28 14:52:52.327  INFO 5936 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 5936 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:52:52.343  INFO 5936 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:52:52.411  INFO 5936 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:52:52 MSK 2018]; root of context hierarchy
+2018-02-28 14:52:53.740  INFO 5936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:52:54.257  INFO 5936 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:52:54.278  INFO 5936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:52:54.279  INFO 5936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:52:54.684  INFO 5936 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:52:54.691  INFO 5936 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:52:54.691  INFO 5936 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2280 ms
+2018-02-28 14:52:54.920  INFO 5936 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:52:54.925  INFO 5936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:52:54.927  INFO 5936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:52:54.927  INFO 5936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:52:54.931  INFO 5936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:52:55.708  INFO 5936 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:52:55.725  INFO 5936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:52:55.810  INFO 5936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:52:55.813  INFO 5936 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:52:55.814  INFO 5936 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:52:55.865  INFO 5936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:52:55.990  INFO 5936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:52:56.761  INFO 5936 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:52:56.957  INFO 5936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:52:57.750  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:52:52 MSK 2018]; root of context hierarchy
+2018-02-28 14:52:57.893  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:52:57.895  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:52:57.895  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:52:57.896  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:52:57.896  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:52:57.910  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:52:57.912  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:52:57.914  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:52:57.918  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:52:57.919  INFO 5936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:52:57.941  INFO 5936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:52:57.976  INFO 5936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:52:57.976  INFO 5936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:52:58.054  INFO 5936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:52:58.550  INFO 5936 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:52:58.679  INFO 5936 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:52:58.686  INFO 5936 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.061 seconds (JVM running for 9.992)
+2018-02-28 14:53:00.274  INFO 5936 --- [http-nio-8083-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:53:00.277  INFO 5936 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:53:00.312  INFO 5936 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-02-28 14:54:02.236  INFO 13760 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 13760 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:54:02.236  INFO 13760 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:54:02.330  INFO 13760 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:54:02 MSK 2018]; root of context hierarchy
+2018-02-28 14:54:03.648  INFO 13760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba7ac542] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:54:04.150  INFO 13760 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:54:04.166  INFO 13760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:54:04.166  INFO 13760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:54:04.604  INFO 13760 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:54:04.610  INFO 13760 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:54:04.610  INFO 13760 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2280 ms
+2018-02-28 14:54:04.832  INFO 13760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:54:04.837  INFO 13760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:54:04.839  INFO 13760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:54:04.839  INFO 13760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:54:04.885  INFO 13760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:54:05.653  INFO 13760 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:54:05.672  INFO 13760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:54:05.762  INFO 13760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:54:05.764  INFO 13760 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:54:05.766  INFO 13760 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:54:05.822  INFO 13760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:54:05.959  INFO 13760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:54:06.637  INFO 13760 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:54:06.930  INFO 13760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:54:08.194  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:54:02 MSK 2018]; root of context hierarchy
+2018-02-28 14:54:08.292  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:54:08.294  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:54:08.295  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:54:08.296  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:54:08.358  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:54:08.358  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:54:08.360  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:54:08.362  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:54:08.364  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:54:08.365  INFO 13760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:54:08.387  INFO 13760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:54:08.406  INFO 13760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:08.406  INFO 13760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:08.477  INFO 13760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:08.962  INFO 13760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:54:09.090  INFO 13760 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:54:09.096  INFO 13760 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.203 seconds (JVM running for 10.547)
+2018-02-28 14:54:09.217  INFO 13760 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:54:09.218  INFO 13760 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:54:09.252  INFO 13760 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-02-28 14:54:47.884  INFO 13832 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 13832 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:54:47.904  INFO 13832 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:54:47.966  INFO 13832 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:54:47 MSK 2018]; root of context hierarchy
+2018-02-28 14:54:49.461  INFO 13832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:54:49.983  INFO 13832 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:54:50.009  INFO 13832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:54:50.010  INFO 13832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:54:50.470  INFO 13832 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:54:50.476  INFO 13832 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:54:50.477  INFO 13832 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2515 ms
+2018-02-28 14:54:50.743  INFO 13832 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:54:50.748  INFO 13832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:54:50.749  INFO 13832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:54:50.749  INFO 13832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:54:50.749  INFO 13832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:54:51.593  INFO 13832 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:54:51.612  INFO 13832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:54:51.706  INFO 13832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:54:51.709  INFO 13832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:54:51.711  INFO 13832 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:54:51.777  INFO 13832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:54:51.919  INFO 13832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:54:52.698  INFO 13832 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:54:52.933  INFO 13832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:54:54.006  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:54:47 MSK 2018]; root of context hierarchy
+2018-02-28 14:54:54.113  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:54:54.115  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:54:54.117  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:54:54.118  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:54:54.119  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:54:54.120  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:54:54.123  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:54:54.124  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:54:54.127  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:54:54.127  INFO 13832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:54:54.158  INFO 13832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:54:54.234  INFO 13832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:54.235  INFO 13832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:54.297  INFO 13832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:54:54.874  INFO 13832 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:54:55.001  INFO 13832 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:54:55.008  INFO 13832 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 7.513 seconds (JVM running for 11.265)
+2018-02-28 14:54:55.076  INFO 13832 --- [http-nio-8083-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:54:55.076  INFO 13832 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:54:55.113  INFO 13832 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-02-28 14:55:32.645  INFO 12248 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 12248 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:55:32.649  INFO 12248 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:55:32.723  INFO 12248 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:55:32 MSK 2018]; root of context hierarchy
+2018-02-28 14:55:34.248  INFO 12248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8631b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:55:34.783  INFO 12248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:55:34.805  INFO 12248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:55:34.807  INFO 12248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:55:35.224  INFO 12248 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:55:35.231  INFO 12248 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:55:35.231  INFO 12248 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2512 ms
+2018-02-28 14:55:35.460  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:55:35.465  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:55:35.466  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:55:35.467  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:55:35.467  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:55:36.363  INFO 12248 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:55:36.385  INFO 12248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:55:36.477  INFO 12248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:55:36.480  INFO 12248 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:55:36.482  INFO 12248 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:55:36.534  INFO 12248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:55:36.675  INFO 12248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:55:37.391  INFO 12248 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:55:37.562  INFO 12248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:55:38.362  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:55:32 MSK 2018]; root of context hierarchy
+2018-02-28 14:55:38.459  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:55:38.461  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:55:38.461  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:55:38.462  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:55:38.463  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:55:38.463  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:55:38.466  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:55:38.467  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:55:38.471  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:55:38.471  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:55:38.496  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:55:38.516  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:55:38.517  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:55:38.580  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:55:38.987  INFO 12248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:55:39.080  INFO 12248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:55:39.087  INFO 12248 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 6.869 seconds (JVM running for 8.262)
+2018-02-28 14:55:40.038  INFO 12248 --- [http-nio-8083-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:55:40.040  INFO 12248 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:55:40.074  INFO 12248 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-02-28 14:57:16.460  WARN 12248 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "editsave"
+2018-02-28 14:57:20.099  INFO 12248 --- [http-nio-8083-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-28 14:58:22.361  INFO 3000 --- [main] com.market.market.MarketApplication      : Starting MarketApplication on DESKTOP-98UC019 with PID 3000 (C:\Users\misha\IdeaProjects\market\target\classes started by misha in C:\Users\misha\IdeaProjects\market)
+2018-02-28 14:58:22.365  INFO 3000 --- [main] com.market.market.MarketApplication      : No active profile set, falling back to default profiles: default
+2018-02-28 14:58:22.467  INFO 3000 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:58:22 MSK 2018]; root of context hierarchy
+2018-02-28 14:58:24.015  INFO 3000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4831394c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-28 14:58:24.549  INFO 3000 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2018-02-28 14:58:24.567  INFO 3000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-28 14:58:24.568  INFO 3000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-28 14:58:25.028  INFO 3000 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-28 14:58:25.036  INFO 3000 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-28 14:58:25.037  INFO 3000 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2573 ms
+2018-02-28 14:58:25.289  INFO 3000 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-28 14:58:25.294  INFO 3000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-28 14:58:25.295  INFO 3000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-28 14:58:25.296  INFO 3000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-28 14:58:25.296  INFO 3000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-28 14:58:26.324  INFO 3000 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:58:26.342  INFO 3000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-28 14:58:26.425  INFO 3000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-28 14:58:26.427  INFO 3000 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-28 14:58:26.428  INFO 3000 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-28 14:58:26.483  INFO 3000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-28 14:58:26.611  INFO 3000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-28 14:58:27.294  INFO 3000 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-02-28 14:58:27.456  INFO 3000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-28 14:58:28.238  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Feb 28 14:58:22 MSK 2018]; root of context hierarchy
+2018-02-28 14:58:28.549  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteprod/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.delete(int)
+2018-02-28 14:58:28.551  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.save(com.market.market.Entity.Product)
+2018-02-28 14:58:28.553  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.admin()
+2018-02-28 14:58:28.555  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editsave],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.editsave(com.market.market.Entity.Product)
+2018-02-28 14:58:28.555  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addNew]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.showform()
+2018-02-28 14:58:28.556  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/editform/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.AdminController.edit(int)
+2018-02-28 14:58:28.559  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.index()
+2018-02-28 14:58:28.561  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showProduct/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.market.market.Controller.ProductController.edit(int)
+2018-02-28 14:58:28.564  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-28 14:58:28.565  INFO 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-28 14:58:28.637  INFO 3000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-28 14:58:28.664  INFO 3000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:58:28.669  INFO 3000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:58:29.276  INFO 3000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-28 14:58:29.676  INFO 3000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-28 14:58:29.784  INFO 3000 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2018-02-28 14:58:29.790  INFO 3000 --- [main] com.market.market.MarketApplication      : Started MarketApplication in 8.022 seconds (JVM running for 11.45)
+2018-02-28 14:58:29.879  INFO 3000 --- [http-nio-8083-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-28 14:58:29.880  INFO 3000 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-28 14:58:29.918  INFO 3000 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-02-28 14:58:33.932  INFO 3000 --- [http-nio-8083-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

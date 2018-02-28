@@ -66,7 +66,7 @@
         <table>
             <tr>
                 <td colspan="3">
-                    <b>Подробности о товаре</b>
+                    <b>Подробности о товаре: </b>${command.name}
                 </td>
             </tr>
             <tr>

@@ -89,7 +89,9 @@ MENU
     /*font-weight: bold;*/
 }
 
-
+#editfield {
+    width: 300px;
+}
 
 #wrap{
     display: none;
