@@ -46,6 +46,9 @@
             <tr>
                 <td>Меню добавления товара</td>
             </tr>
+            <tr>
+                <td>Вы можете добавить товар здесь</td>
+            </tr>
 
 
 
@@ -55,9 +58,13 @@
 
     <div id="content">
 
-        <h1 align="center">Добавить новый товар</h1>
         <form:form method="post" action="save">
             <table >
+                <tr>
+                    <td colspan="2">
+                        <b>Добавить новый товар</b>
+                    </td>
+                </tr>
                 <tr>
                     <td>Название : </td>
                     <td><form:input path="name"  /></td>

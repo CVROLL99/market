@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%--
   Created by IntelliJ IDEA.
   User: misha
@@ -28,7 +29,8 @@
         <table>
             <tr>
                 <td>
-                    <img src="/resources/logo1.jpg" align="left"/>
+                    <a href="${pageContext.request.contextPath}/index"><img src="/resources/logo1.jpg"
+                                                                            align="left"/></a>
                 </td>
                 <td align="right">
                     <h2>Интернет-магазин товаров</h2>
@@ -41,6 +43,7 @@
     <div id="menu">
 
         <table>
+
             <tr>
                 <td>Добро пожаловать на наш сайт!</td>
             </tr>
@@ -58,24 +61,31 @@
 
     <div id="content">
 
-        <table id="tblExport">
-            <tr>
-                <th>Номер</th>
-                <th>Наименование</th>
-                <th>Описание</th>
-                <th>Цена</th>
-                <th></th>
-            </tr>
-            <c:forEach items="${products}" var="product">
-                <tr>
-                    <td>${product.id}</td>
-                    <td>${product.name}</td>
-                    <td>${product.description}</td>
-                    <td>${product.price}</td>
-                    <td><a href="showProduct/${product.id}">Подробнее</a></td>
-                </tr>
+        <%--<h1 align="center">Подробности о товаре</h1>--%>
 
-            </c:forEach>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <b>Подробности о товаре</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">Здесь будет картинка</td>
+                <td><b>Название:</b></td>
+                <td>${command.name}</td>
+            </tr>
+            <tr>
+                <td><b>Описание:</b></td>
+                <td>${command.description}</td>
+            </tr>
+            <tr>
+                <td><b>Цена:</b></td>
+                <td>${command.price}</td>
+            </tr>
+            <tr>
+
+                <td colspan="2"><a href="${pageContext.request.contextPath}/index">Назад</a></td>
+            </tr>
         </table>
 
 

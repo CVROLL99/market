@@ -21,12 +21,12 @@ public class Product implements Serializable{
     private String description;
 
     @Column(name = "price")
-    private int price;
+    private String price;
 
     public Product() {
     }
 
-    public Product(String name, String description, int price) {
+    public Product(String name, String description, String price) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -57,11 +57,11 @@ public class Product implements Serializable{
         this.description = description;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

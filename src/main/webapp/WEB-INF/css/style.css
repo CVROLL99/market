@@ -45,10 +45,10 @@ MENU
     background: #ECE9E0;
     text-align: center;
     border-collapse: separate;
-    border-spacing: 4px;
+    border-spacing: 6px;
     color: #656665;
-    border: 18px solid #ECE9E0;
-    border-radius: 20px;
+    border: 8px solid #ECE9E0;
+    border-radius: 10px;
     margin: auto;
     /*width: 200px;*/
 }
@@ -88,6 +88,8 @@ MENU
     color: #fff; /* Цвет текста при наведении */
     /*font-weight: bold;*/
 }
+
+
 
 #wrap{
     display: none;

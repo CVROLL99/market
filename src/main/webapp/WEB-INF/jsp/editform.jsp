@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%--
   Created by IntelliJ IDEA.
   User: misha
@@ -44,9 +44,11 @@
         <table>
 
             <tr>
-                <td>Меню добавления товара</td>
+                <td>Меню редактирования товара</td>
             </tr>
-
+            <tr>
+                <td>Отредактируйте Ваш товар</td>
+            </tr>
 
 
         </table>
@@ -55,24 +57,29 @@
 
     <div id="content">
 
-        <h1 align="center">Редактирование товара</h1>
+
         <form:form method="post" action="editsave">
-            <table >
+            <table>
                 <tr>
-                    <td>Название : </td>
-                    <td><form:input path="name"  /></td>
+                    <td colspan="2">
+                        <b>Редактирование товара "${command.name}"</b>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Описание :</td>
-                    <td><form:input path="description" /></td>
+                    <td><b>Название :</b></td>
+                    <td><form:input path="name"/></td>
                 </tr>
                 <tr>
-                    <td>Цена :</td>
-                    <td><form:input path="price" /></td>
+                    <td><b>Описание :</b></td>
+                    <td><form:textarea path="description"/></td>
                 </tr>
                 <tr>
-                    <td> </td>
-                    <td><input type="submit" value="Сохранить" /></td>
+                    <td><b>Цена :</b></td>
+                    <td><form:input path="price"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Сохранить"/></td>
                 </tr>
             </table>
         </form:form>

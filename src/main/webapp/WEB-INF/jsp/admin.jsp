@@ -25,7 +25,8 @@
         <table>
             <tr>
                 <td>
-                    <a href="${pageContext.request.contextPath}/index"><img src="/resources/logo1.jpg" align="left"/></a>
+                    <a href="${pageContext.request.contextPath}/index"><img src="/resources/logo1.jpg"
+                                                                            align="left"/></a>
                 </td>
                 <td align="right">
                     <h2>Интернет-магазин товаров</h2>
@@ -59,6 +60,8 @@
                 <th>Наименование</th>
                 <th>Описание</th>
                 <th>Цена</th>
+                <th></th>
+                <th></th>
             </tr>
             <c:forEach items="${products}" var="product">
                 <tr onclick="show('block')" id="${product.id}">
@@ -66,8 +69,8 @@
                     <td>${product.name}</td>
                     <td>${product.description}</td>
                     <td>${product.price}</td>
-                    <td><a href="deleteprod/${product.id}">Delete</a></td>
-                    <td><a href="editform/${product.id}">Edit</a></td>
+                    <td><a href="deleteprod/${product.id}">Удалить</a></td>
+                    <td><a href="editform/${product.id}">Изменить</a></td>
                 </tr>
 
             </c:forEach>
