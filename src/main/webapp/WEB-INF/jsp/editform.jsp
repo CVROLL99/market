@@ -66,15 +66,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><b>Название :</b></td>
+                    <td><b>Название:</b></td>
                     <td><form:input path="name"/></td>
                 </tr>
                 <tr>
-                    <td><b>Описание :</b></td>
+                    <td><b>Описание:</b></td>
                     <td><form:textarea path="description"/></td>
                 </tr>
                 <tr>
-                    <td><b>Цена :</b></td>
+                    <td><b>Цена:</b></td>
                     <td><form:input path="price"/></td>
                 </tr>
                 <tr>
