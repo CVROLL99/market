@@ -2,6 +2,7 @@ package com.market.market.Entity;
 
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.io.Serializable;
 
 @Entity
@@ -12,7 +13,7 @@ public class Product implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Id")
-    private int id;
+    private Integer id;
 
     @Column(name = "name")
     private String name;
@@ -23,6 +24,10 @@ public class Product implements Serializable{
     @Column(name = "price")
     private String price;
 
+    @Column(name = "imagesrc")
+    private String imagesrc;
+
+
     public Product() {
     }
 
@@ -32,11 +37,11 @@ public class Product implements Serializable{
         this.price = price;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -63,6 +68,14 @@ public class Product implements Serializable{
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getImagesrc() {
+        return imagesrc;
+    }
+
+    public void setImagesrc(String imagesrc) {
+        this.imagesrc = imagesrc;
     }
 
     @Override

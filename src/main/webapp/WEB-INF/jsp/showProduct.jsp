@@ -70,7 +70,7 @@
                 </td>
             </tr>
             <tr>
-                <td rowspan="4">Здесь будет картинка</td>
+                <td rowspan="4"><img src="${command.imagesrc}" width="250" height="190"></td>
                 <td><b>Название:</b></td>
                 <td>${command.name}</td>
             </tr>

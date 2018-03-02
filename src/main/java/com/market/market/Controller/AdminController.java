@@ -37,14 +37,14 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/deleteprod/{id}", method = RequestMethod.GET)
-    public ModelAndView delete(@PathVariable int id) {
+    public ModelAndView delete(@PathVariable Integer id) {
         productService.delete(id);
         return new ModelAndView("redirect:/admin");
     }
 
 
     @RequestMapping(value = "/editform/{id}")
-    public ModelAndView edit(@PathVariable int id) {
+    public ModelAndView edit(@PathVariable Integer id) {
         Product product = productService.findOne(id);
         return new ModelAndView("editform", "command", product);
     }
@@ -52,7 +52,7 @@ public class AdminController {
     /* It updates model object. */
     @RequestMapping(value = "/editsave", method = RequestMethod.POST)
     public ModelAndView editsave(@ModelAttribute("product") Product product) {
-        //productService.save(product);
+        productService.save(product);
         return new ModelAndView("redirect:/admin");
     }
 

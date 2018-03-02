@@ -7,7 +7,7 @@
   Time: 21:44
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 
@@ -62,21 +62,27 @@
             <table>
                 <tr>
                     <td colspan="3">
+
                         <b>Редактирование товара "${command.name}"</b>
                     </td>
                 </tr>
                 <tr>
+                    <td><b>Номер:</b></td>
+                    <td ><form:input path="id"/></td>
+                    <td rowspan="4" width="250"></td>
+                </tr>
+                <tr>
                     <td><b>Название:</b></td>
-                    <td ><form:input path="name" id="editfield"/></td>
-                    <td rowspan="3" width="250"></td>
+                    <td ><form:input path="name"/></td>
+
                 </tr>
                 <tr>
                     <td><b>Описание:</b></td>
-                    <td ><form:textarea path="description" id="editfield"/></td>
+                    <td ><form:textarea path="description"/></td>
                 </tr>
                 <tr>
                     <td><b>Цена:</b></td>
-                    <td ><form:input path="price" id="editfield"/></td>
+                    <td ><form:input path="price"/></td>
                 </tr>
                 <tr>
 

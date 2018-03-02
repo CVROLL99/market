@@ -45,7 +45,7 @@
                 <td>Добро пожаловать на наш сайт!</td>
             </tr>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/admin">В админку</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin">Вход</a></td>
             </tr>
             <tr>
                 <td>Форма логина и пароля</td>
